@@ -19,4 +19,4 @@ jobs:
                   cache: 'npm'
                   cache-dependency-path: ${{ matrix.module }}/package-lock.json
             - run: cd ${{ matrix.module }} && npm ci
-            - run: cd ${{ matrix.module }} && npm run test:coverage
+            - run: cd ${{ matrix.module }} && npm run test:cov
