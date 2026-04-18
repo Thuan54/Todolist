@@ -27,6 +27,7 @@
 - Task Detail page with subtask management
 ## 4. MongoDB Task Schema
 ```js
+Task
 {
   _id: ObjectId,
   title: String,
@@ -34,7 +35,8 @@
   dueDate: Date,
   priority: "green" | "yellow" | "red",
   isCompleted: Boolean,
-  subtasks: [{ title: String, isCompleted: Boolean }],
+  strictDeadline: boolean,
+  subtasks: [Task, ...],
   createdAt: Date
 }
 ```
