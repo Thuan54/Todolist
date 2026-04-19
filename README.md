@@ -11,6 +11,13 @@ npm run dev
 ```
 Ensure MongoDB is running locally: `mongosh`
 
+Run migration file
+
+```bash
+cd server
+npm run migrate
+```
+
 ### Frontend (Port 5173)
 ```bash
 cd client
